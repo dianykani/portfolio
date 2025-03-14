@@ -1,0 +1,298 @@
+body {
+	font-family:'Poppins',sans-serif;
+	background-color:rgb(207,246,255);
+	margin:0;
+	padding:0;
+}
+
+header {
+	background-color: #007bff;
+	padding:10px 0;
+}
+
+header nav ul {
+	display:flex;
+	justify-content:center;
+	list-style-type:none;
+	padding:0;
+}
+
+header nav ul li a {
+	text-decoration:none;
+	color:white;
+	font-size:16px;
+	padding: 10px 15px;
+	border-radius:5px;
+	transition:background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+
+
+main {
+	padding:20px; /*pour espacer le contenu principal */
+}
+
+
+.titres {
+	text-align:center;
+	color:#333;
+	margin:30px 0; /*pour espacer avant et après */
+}
+
+.titresveille {
+	text-align:center;
+	color:rgb(4,67,120);
+	margin:30px 0;
+}
+
+.pagedegarde {
+	background-image:url('imageaccueilportefolio.png'); 
+    background-size:cover; 
+    background-position:center; 
+    height:100vh; /*ajuste à la hauteur de l'écran*/
+    color:white; /* Couleur du texte */
+    display:flex;
+    justify-content:center;
+    align-items:center; /* Centre le texte horizontalement et verticalement */
+    text-align:center;
+}
+
+.main-title {
+    font-size:50px;
+    font-weight:bold;
+    margin:0;
+}
+
+.subtitle {
+    font-size:24px;
+    margin:10px 0 0 0;
+}
+
+nav ul {
+	display:flex;
+	justify-content:center;
+	list-style-type:none;
+	padding:0;
+}
+
+nav ul li {
+	margin-right:20px;
+}
+
+nav .button {
+	padding:10px;
+	color:white;
+	font-weight:bold;
+	border:none;
+	cursor:pointer;
+	font-size:16px;
+}
+
+nav .button:hover {
+	background-color:rgb(8,194,249); /*pour avoir une couleur quand on passe au-dessus de l'élément */
+}
+
+
+.onglets {
+	display:flex;
+	justify-content:center;
+	margin-bottom:20px;
+}
+
+.onglets button {
+	background-color:#f0f0f0;
+	border:1px solid #ccc;
+	border-radius:5px;
+	padding:10px 20px;
+	margin:0 5px; /* pour espacer les boutons */
+	cursor:pointer;
+	font-size:16px;
+	transition:background-color 0.3s; /*pour rajouter de l'interactivité et de la modernité */
+	color:rgb(4,160,205);
+	font-family:'Poppins';
+}
+
+.onglets button:hover {
+	background-color:rgb(146,255,234) ;
+}
+
+.onglets button active {
+	background-color:#007bff;
+	color:rgb(4,160,205);
+	border-color:#007bff;
+	font-family:'Poppins';
+}
+
+.onglets contenu {
+	text-align:center;
+}
+
+.onglet-panneau {
+	display:none;
+	padding:20px;
+	background-color:#fafafa;
+	border:1px solid #ccc;
+	border-radius:5px;
+	margin-top:10px;
+	text-align:justify;
+}
+
+.onglet-panneau.active {
+	display:block; /*pour afficher le panneau actif*/
+}
+
+#veilletechnologique {
+	margin-bottom:100px;
+}
+
+#contact {
+	margin-top:100px;
+	clear:both;
+}
+
+section {
+	min-height:100vh;
+	padding:20px;
+	box-sizing:border-box;
+	margin-bottom:50px;
+}
+
+#projets {
+	display:flex;
+	gap:20px;
+	justify-content:center;
+	align-items:center;
+    margin:50px 0;}
+
+.project {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	text-align:center;
+	width:250px;
+	border:1px solid #ccc;
+	border-radius:8px;
+	overflow:hidden; /*pour recadrer le contenu qui déborde */
+	box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+	transition:transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+	transform:translateY(-10px);
+	box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.project-image img {
+	width:100%;
+	height:auto;
+}
+
+.project-description {
+	padding:20px;
+}
+
+.contact {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh; /*comme ça ça prendra tout l'écran */
+	padding:20px;
+	background-color:#f9f9f9;
+}
+
+.contact-info {
+	margin-top:2rem;
+}
+
+.contact-info a {
+	color:#007bff;
+	text-decoration:none;
+}
+
+.contact-info a:hover {
+	text-decoraction:underline;
+}
+
+.contact-container {
+	background:white;
+	padding:20px;
+	border-radius:10px;
+	box-shadow:0 4px 8px rgba(0,0,0,0.1);
+	width:100%;
+	max-width:500px;
+	text-align:center;
+}
+
+.contact-container h2 {
+	margin-bottom:1rem;
+}
+
+.form-group {
+	margin-bottom:1rem;
+}
+
+label {
+	display:block;
+	margin-bottom:0.5rem;
+}
+
+input, textarea {
+	width:calc(100%-20px);
+    padding:0.5rem;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button {
+	background-color:#007bff;
+	color:white;
+	padding:0.5rem 1rem;
+	border:none;
+	border-radius:5px;
+	cursor:pointer;
+	margin-top:1rem;
+	display:block;
+	width:100%;
+	text-decoration:none;
+}
+
+.button.active {
+	color:red;
+}
+
+
+button:hover {
+	background-color:#0056b3;
+}
+
+
+.encadre {
+	padding:15px;
+	background-color:#fff;
+	border:2px solid #007BFF;
+	border-radius:10px;
+	margin:10px 0;
+	box-shadow:0 4px 6px rgba(0,0,0,0.1);
+	text-align:justify;
+}
+
+.veilletechnologique p.encadre {
+	margin:20px 0;
+}
+
+.liste{
+	list-style-type:none;
+}
+
+.color{
+	color:rgb(4,67,120);
+}
+
+.center{
+	text-align:center;
+}
